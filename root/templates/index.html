@@ -14,11 +14,29 @@
       <h1 id="logo">Logo</h1>
       <ul class="nav-items">
         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Get Answers</a></li>
+        <li class="nav-item"><a href="#question-answering" class="nav-link">Get Answers</a></li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
       </ul>
     </nav>
+    <div class="hero">
+      <div class="site-text">
+        <h1 class="main-title">Get some answers</h1>
+        <button class="btn">Ask some questions</button>
+      </div>
+      <img src="{{url_for('static', filename='res/images/undraw_searching_p5ux.svg')}}" alt="" class="hero-icon">
+    </div>
   </header>
+  <main>
+    <section id="question-answering">
+      <form action="" method="post" class="questions-form">
+        <label for="" class="form-item">Enter text</label>
+        <input type="text" name="text" class="form-item">
+        <label for="" class="form-item">enter questions</label>
+        <input type="text" placeholder="question1, question2, question3..." class="form-item">
+        <input type="submit" class="form-item">
+      </form>
+    </section>
+  </main>
 </body>
 </html>
